@@ -1,0 +1,301 @@
+[
+ {
+  "group": "Навигация",
+  "id": "hover",
+  "what": "Наведение на кнопку, слот, пункт списка",
+  "keys": [
+   "ui_hover",
+   "choice_hover",
+   "list_tick",
+   "uiHover (шина)",
+   "stone_tick"
+  ],
+  "volume": 0.25,
+  "dur": 0.05
+ },
+ {
+  "group": "Навигация",
+  "id": "click",
+  "what": "Нажатие кнопки",
+  "keys": [
+   "ui_click",
+   "ui (шина)",
+   "dialog_next",
+   "confirm",
+   "floor_pick"
+  ],
+  "volume": 0.35,
+  "dur": 0.13
+ },
+ {
+  "group": "Навигация",
+  "id": "tab",
+  "what": "Вкладка, выбор ответа",
+  "keys": [
+   "tab_select",
+   "choice_pick"
+  ],
+  "volume": 0.3,
+  "dur": 0.11
+ },
+ {
+  "group": "Навигация",
+  "id": "paper_slide",
+  "what": "Окно открылось / закрылось, разговор",
+  "keys": [
+   "paper_slide",
+   "dialog_open",
+   "dialog_close",
+   "ui_open_scene"
+  ],
+  "volume": 0.3,
+  "dur": 0.32
+ },
+ {
+  "group": "Навигация",
+  "id": "page_turn",
+  "what": "Листание книги героя",
+  "keys": [
+   "page_turn",
+   "page_back"
+  ],
+  "volume": 0.35,
+  "dur": 0.5
+ },
+ {
+  "group": "Навигация",
+  "id": "error",
+  "what": "«Нельзя»: мало денег, нет места, закрыто",
+  "keys": [
+   "error",
+   "mana_empty"
+  ],
+  "volume": 0.35,
+  "dur": 0.3
+ },
+ {
+  "group": "Навигация",
+  "id": "stamp",
+  "what": "Подтвердил: печать, купил, выучил талант",
+  "keys": [
+   "stamp"
+  ],
+  "volume": 0.35,
+  "dur": 0.3
+ },
+ {
+  "group": "Награды",
+  "id": "item_get",
+  "what": "Получен новый предмет (тост)",
+  "keys": [
+   "reward_pop",
+   "new_topic"
+  ],
+  "volume": 0.35,
+  "dur": 0.75
+ },
+ {
+  "group": "Награды",
+  "id": "armor_equip",
+  "what": "Надел броню / выпала броня",
+  "keys": [
+   "armorEquip (шина)"
+  ],
+  "volume": 0.4,
+  "dur": 0.45
+ },
+ {
+  "group": "Награды",
+  "id": "coins",
+  "what": "Золото",
+  "keys": [
+   "coins"
+  ],
+  "volume": 0.3,
+  "dur": 0.45
+ },
+ {
+  "group": "Награды",
+  "id": "coin_tick",
+  "what": "Счётчик золота тикает",
+  "keys": [
+   "coin_tick"
+  ],
+  "volume": 0.25,
+  "dur": 0.15
+ },
+ {
+  "group": "Награды",
+  "id": "level_up",
+  "what": "Новый уровень, задание выполнено",
+  "keys": [
+   "level_up",
+   "levelUp (шина)",
+   "hubQuest (шина)"
+  ],
+  "volume": 0.4,
+  "dur": 1.5
+ },
+ {
+  "group": "Награды",
+  "id": "star_on",
+  "what": "Звезда ★ / талант / медаль",
+  "keys": [
+   "star_on",
+   "medal"
+  ],
+  "volume": 0.35,
+  "dur": 1.0
+ },
+ {
+  "group": "Сундук",
+  "id": "chest_appear",
+  "what": "Сундук появляется и летит в сумку",
+  "keys": [
+   "chest_appear",
+   "chest_fly"
+  ],
+  "volume": 0.3,
+  "dur": 0.6
+ },
+ {
+  "group": "Сундук",
+  "id": "chest_land",
+  "what": "Сундук ставится на стол / подобран",
+  "keys": [
+   "chest_land",
+   "chest_pickup",
+   "stone_slab"
+  ],
+  "volume": 0.4,
+  "dur": 0.4
+ },
+ {
+  "group": "Сундук",
+  "id": "chest_open",
+  "what": "Защёлка, скрип крышки",
+  "keys": [
+   "lid_open",
+   "chest_open",
+   "chest (шина)"
+  ],
+  "volume": 0.4,
+  "dur": 1.0
+ },
+ {
+  "group": "Сундук",
+  "id": "blade_strike",
+  "what": "Клинок касается сундука («читает память»)",
+  "keys": [
+   "blade_strike",
+   "blade_form"
+  ],
+  "volume": 0.35,
+  "dur": 0.9
+ },
+ {
+  "group": "Сундук",
+  "id": "memory_tick",
+  "what": "Перебор редкостей (тик)",
+  "keys": [
+   "memory_tick"
+  ],
+  "volume": 0.25,
+  "dur": 0.45
+ },
+ {
+  "group": "Сундук",
+  "id": "reveal",
+  "what": "Показ обычного / редкого предмета",
+  "keys": [
+   "item_reveal"
+  ],
+  "volume": 0.35,
+  "dur": 1.0
+ },
+ {
+  "group": "Сундук",
+  "id": "reveal_rare",
+  "what": "Эпик, легенда, секрет",
+  "keys": [
+   "memory_secret"
+  ],
+  "volume": 0.4,
+  "dur": 2.1
+ },
+ {
+  "group": "Кузня",
+  "id": "anvil",
+  "what": "Удар молота по наковальне",
+  "keys": [
+   "forge_strike",
+   "forge_anvil"
+  ],
+  "volume": 0.35,
+  "dur": 0.9
+ },
+ {
+  "group": "Кузня",
+  "id": "forge_heat",
+  "what": "Горн разгорается",
+  "keys": [
+   "forge_heat",
+   "candle"
+  ],
+  "volume": 0.3,
+  "dur": 1.1
+ },
+ {
+  "group": "Кузня",
+  "id": "quench",
+  "what": "Закалка в воде",
+  "keys": [
+   "forge_quench"
+  ],
+  "volume": 0.3,
+  "dur": 1.2
+ },
+ {
+  "group": "Кузня",
+  "id": "spark",
+  "what": "Искры",
+  "keys": [
+   "forge_spark"
+  ],
+  "volume": 0.25,
+  "dur": 0.4
+ },
+ {
+  "group": "Кузня",
+  "id": "forge_success",
+  "what": "Улучшение удалось (+★)",
+  "keys": [
+   "forge_success",
+   "forge_reveal"
+  ],
+  "volume": 0.4,
+  "dur": 1.3
+ },
+ {
+  "group": "Кузня",
+  "id": "forge_fail",
+  "what": "Не хватает материала / отказ кузни",
+  "keys": [
+   "forge_fail"
+  ],
+  "volume": 0.35,
+  "dur": 0.5
+ },
+ {
+  "group": "Кузня",
+  "id": "echo",
+  "what": "Эхо / душа впитывается",
+  "keys": [
+   "echo_absorb",
+   "echo_socket",
+   "soul (шина)"
+  ],
+  "volume": 0.35,
+  "dur": 0.9
+ }
+]

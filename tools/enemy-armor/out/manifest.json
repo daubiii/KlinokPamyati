@@ -1,0 +1,1299 @@
+[
+ {
+  "mesh": "guard_Helmet",
+  "enemy": "guard",
+  "replaces": [
+   "Helmet",
+   "HelmetBrim"
+  ],
+  "anchor": "Helmet",
+  "size": [
+   16,
+   12,
+   16
+  ],
+  "offset": [
+   0.0,
+   0.0,
+   0.0
+  ],
+  "colors": "KDR",
+  "triangles": 310
+ },
+ {
+  "mesh": "guard_Cuirass",
+  "enemy": "guard",
+  "replaces": [
+   "Cuirass"
+  ],
+  "anchor": "Cuirass",
+  "size": [
+   18,
+   14,
+   10
+  ],
+  "offset": [
+   0.0,
+   0.0,
+   0.0
+  ],
+  "colors": "KLG",
+  "triangles": 422
+ },
+ {
+  "mesh": "guard_PauldronR",
+  "enemy": "guard",
+  "replaces": [
+   "PauldronR"
+  ],
+  "anchor": "PauldronR",
+  "size": [
+   11,
+   5,
+   11
+  ],
+  "offset": [
+   0.0,
+   0.0,
+   0.0
+  ],
+  "colors": "KGR",
+  "triangles": 118
+ },
+ {
+  "mesh": "guard_PauldronL",
+  "enemy": "guard",
+  "replaces": [
+   "PauldronL"
+  ],
+  "anchor": "PauldronL",
+  "size": [
+   11,
+   5,
+   11
+  ],
+  "offset": [
+   0.0,
+   0.0,
+   0.0
+  ],
+  "colors": "KGR",
+  "triangles": 118
+ },
+ {
+  "mesh": "guard_BracerR",
+  "enemy": "guard",
+  "replaces": [
+   "BracerR"
+  ],
+  "anchor": "BracerR",
+  "size": [
+   10,
+   5,
+   10
+  ],
+  "offset": [
+   0.0,
+   0.0,
+   0.0
+  ],
+  "colors": "KRD",
+  "triangles": 96
+ },
+ {
+  "mesh": "guard_BracerL",
+  "enemy": "guard",
+  "replaces": [
+   "BracerL"
+  ],
+  "anchor": "BracerL",
+  "size": [
+   10,
+   5,
+   10
+  ],
+  "offset": [
+   0.0,
+   0.0,
+   0.0
+  ],
+  "colors": "KRD",
+  "triangles": 96
+ },
+ {
+  "mesh": "guard_Tabard",
+  "enemy": "guard",
+  "replaces": [
+   "Tabard"
+  ],
+  "anchor": "Tabard",
+  "size": [
+   8,
+   12,
+   1
+  ],
+  "offset": [
+   0.0,
+   0.0,
+   0.0
+  ],
+  "colors": "KDA",
+  "triangles": 128
+ },
+ {
+  "mesh": "guard_GreaveR",
+  "enemy": "guard",
+  "replaces": [
+   "GreaveR"
+  ],
+  "anchor": "GreaveR",
+  "size": [
+   10,
+   9,
+   10
+  ],
+  "offset": [
+   0.0,
+   0.0,
+   0.0
+  ],
+  "colors": "KSG",
+  "triangles": 164
+ },
+ {
+  "mesh": "guard_GreaveL",
+  "enemy": "guard",
+  "replaces": [
+   "GreaveL"
+  ],
+  "anchor": "GreaveL",
+  "size": [
+   10,
+   9,
+   10
+  ],
+  "offset": [
+   0.0,
+   0.0,
+   0.0
+  ],
+  "colors": "KSG",
+  "triangles": 164
+ },
+ {
+  "mesh": "guard_BootR",
+  "enemy": "guard",
+  "replaces": [
+   "BootR"
+  ],
+  "anchor": "BootR",
+  "size": [
+   10,
+   3,
+   12
+  ],
+  "offset": [
+   0.0,
+   0.0,
+   0.0
+  ],
+  "colors": "KDB",
+  "triangles": 60
+ },
+ {
+  "mesh": "guard_BootL",
+  "enemy": "guard",
+  "replaces": [
+   "BootL"
+  ],
+  "anchor": "BootL",
+  "size": [
+   10,
+   3,
+   12
+  ],
+  "offset": [
+   0.0,
+   0.0,
+   0.0
+  ],
+  "colors": "KDB",
+  "triangles": 60
+ },
+ {
+  "mesh": "guard_Buckler",
+  "enemy": "guard",
+  "replaces": [
+   "Buckler"
+  ],
+  "anchor": "Buckler",
+  "size": [
+   12,
+   12,
+   2
+  ],
+  "offset": [
+   0.0,
+   0.0,
+   0.0
+  ],
+  "colors": "KSR",
+  "triangles": 184
+ },
+ {
+  "mesh": "guard_Sword",
+  "enemy": "guard",
+  "replaces": [
+   "Grip",
+   "Blade",
+   "Guard",
+   "Pommel"
+  ],
+  "anchor": "Grip",
+  "size": [
+   7,
+   30,
+   3.0
+  ],
+  "offset": [
+   0.0,
+   10.5,
+   0.0
+  ],
+  "colors": "KLW",
+  "triangles": 242
+ },
+ {
+  "mesh": "shade_Hood",
+  "enemy": "shade",
+  "replaces": [
+   "Hood",
+   "HoodTail"
+  ],
+  "anchor": "Hood",
+  "size": [
+   13,
+   13,
+   17
+  ],
+  "offset": [
+   0.0,
+   0.0,
+   2.0
+  ],
+  "colors": "KSD",
+  "triangles": 316
+ },
+ {
+  "mesh": "shade_Pelerine",
+  "enemy": "shade",
+  "replaces": [
+   "Pelerine"
+  ],
+  "anchor": "Pelerine",
+  "size": [
+   18,
+   8,
+   10
+  ],
+  "offset": [
+   0.0,
+   0.0,
+   0.0
+  ],
+  "colors": "KSD",
+  "triangles": 310
+ },
+ {
+  "mesh": "shade_Cloak",
+  "enemy": "shade",
+  "replaces": [
+   "Cloak"
+  ],
+  "anchor": "Cloak",
+  "size": [
+   16,
+   27,
+   1
+  ],
+  "offset": [
+   0.0,
+   0.0,
+   0.0
+  ],
+  "colors": "SKD",
+  "triangles": 708
+ },
+ {
+  "mesh": "shade_WrapLegR",
+  "enemy": "shade",
+  "replaces": [
+   "WrapLegR"
+  ],
+  "anchor": "WrapLegR",
+  "size": [
+   9,
+   9,
+   9
+  ],
+  "offset": [
+   0.0,
+   0.0,
+   0.0
+  ],
+  "colors": "KDS",
+  "triangles": 60
+ },
+ {
+  "mesh": "shade_WrapLegL",
+  "enemy": "shade",
+  "replaces": [
+   "WrapLegL"
+  ],
+  "anchor": "WrapLegL",
+  "size": [
+   9,
+   9,
+   9
+  ],
+  "offset": [
+   0.0,
+   0.0,
+   0.0
+  ],
+  "colors": "KDS",
+  "triangles": 60
+ },
+ {
+  "mesh": "shade_WrapArmR",
+  "enemy": "shade",
+  "replaces": [
+   "WrapArmR"
+  ],
+  "anchor": "WrapArmR",
+  "size": [
+   9,
+   7,
+   9
+  ],
+  "offset": [
+   0.0,
+   0.0,
+   0.0
+  ],
+  "colors": "KDS",
+  "triangles": 52
+ },
+ {
+  "mesh": "shade_WrapArmL",
+  "enemy": "shade",
+  "replaces": [
+   "WrapArmL"
+  ],
+  "anchor": "WrapArmL",
+  "size": [
+   9,
+   7,
+   9
+  ],
+  "offset": [
+   0.0,
+   0.0,
+   0.0
+  ],
+  "colors": "KDS",
+  "triangles": 52
+ },
+ {
+  "mesh": "shade_DaggerR",
+  "enemy": "shade",
+  "replaces": [
+   "DaggerGripR",
+   "DaggerBladeR",
+   "DaggerGuardR"
+  ],
+  "anchor": "DaggerGripR",
+  "size": [
+   5,
+   16,
+   2.0
+  ],
+  "offset": [
+   0.0,
+   5.0,
+   0.0
+  ],
+  "colors": "KWH",
+  "triangles": 128
+ },
+ {
+  "mesh": "shade_DaggerL",
+  "enemy": "shade",
+  "replaces": [
+   "DaggerGripL",
+   "DaggerBladeL",
+   "DaggerGuardL"
+  ],
+  "anchor": "DaggerGripL",
+  "size": [
+   5,
+   16,
+   2.0
+  ],
+  "offset": [
+   0.0,
+   5.0,
+   0.0
+  ],
+  "colors": "KWH",
+  "triangles": 128
+ },
+ {
+  "mesh": "knight_Helmet",
+  "enemy": "knight",
+  "replaces": [
+   "Helmet"
+  ],
+  "anchor": "Helmet",
+  "size": [
+   13,
+   14,
+   13
+  ],
+  "offset": [
+   0.0,
+   0.0,
+   0.0
+  ],
+  "colors": "KSG",
+  "triangles": 222
+ },
+ {
+  "mesh": "knight_Crest",
+  "enemy": "knight",
+  "replaces": [
+   "Crest"
+  ],
+  "anchor": "Crest",
+  "size": [
+   3,
+   6,
+   8
+  ],
+  "offset": [
+   0.0,
+   0.0,
+   0.0
+  ],
+  "colors": "KDW",
+  "triangles": 36
+ },
+ {
+  "mesh": "knight_Cuirass",
+  "enemy": "knight",
+  "replaces": [
+   "Cuirass"
+  ],
+  "anchor": "Cuirass",
+  "size": [
+   18,
+   14,
+   10
+  ],
+  "offset": [
+   0.0,
+   0.0,
+   0.0
+  ],
+  "colors": "KGS",
+  "triangles": 328
+ },
+ {
+  "mesh": "knight_PauldronR",
+  "enemy": "knight",
+  "replaces": [
+   "PauldronR"
+  ],
+  "anchor": "PauldronR",
+  "size": [
+   13,
+   6,
+   13
+  ],
+  "offset": [
+   0.0,
+   0.0,
+   0.0
+  ],
+  "colors": "KGL",
+  "triangles": 106
+ },
+ {
+  "mesh": "knight_PauldronL",
+  "enemy": "knight",
+  "replaces": [
+   "PauldronL"
+  ],
+  "anchor": "PauldronL",
+  "size": [
+   13,
+   6,
+   13
+  ],
+  "offset": [
+   0.0,
+   0.0,
+   0.0
+  ],
+  "colors": "KGL",
+  "triangles": 106
+ },
+ {
+  "mesh": "knight_Faulds",
+  "enemy": "knight",
+  "replaces": [
+   "Faulds"
+  ],
+  "anchor": "Faulds",
+  "size": [
+   18,
+   4,
+   10
+  ],
+  "offset": [
+   0.0,
+   0.0,
+   0.0
+  ],
+  "colors": "KSG",
+  "triangles": 404
+ },
+ {
+  "mesh": "knight_GreaveR",
+  "enemy": "knight",
+  "replaces": [
+   "GreaveR"
+  ],
+  "anchor": "GreaveR",
+  "size": [
+   10,
+   9,
+   10
+  ],
+  "offset": [
+   0.0,
+   0.0,
+   0.0
+  ],
+  "colors": "KSG",
+  "triangles": 164
+ },
+ {
+  "mesh": "knight_GreaveL",
+  "enemy": "knight",
+  "replaces": [
+   "GreaveL"
+  ],
+  "anchor": "GreaveL",
+  "size": [
+   10,
+   9,
+   10
+  ],
+  "offset": [
+   0.0,
+   0.0,
+   0.0
+  ],
+  "colors": "KSG",
+  "triangles": 164
+ },
+ {
+  "mesh": "knight_BootR",
+  "enemy": "knight",
+  "replaces": [
+   "BootR"
+  ],
+  "anchor": "BootR",
+  "size": [
+   10,
+   3,
+   12
+  ],
+  "offset": [
+   0.0,
+   0.0,
+   0.0
+  ],
+  "colors": "KDB",
+  "triangles": 60
+ },
+ {
+  "mesh": "knight_BootL",
+  "enemy": "knight",
+  "replaces": [
+   "BootL"
+  ],
+  "anchor": "BootL",
+  "size": [
+   10,
+   3,
+   12
+  ],
+  "offset": [
+   0.0,
+   0.0,
+   0.0
+  ],
+  "colors": "KDB",
+  "triangles": 60
+ },
+ {
+  "mesh": "knight_BracerR",
+  "enemy": "knight",
+  "replaces": [
+   "BracerR"
+  ],
+  "anchor": "BracerR",
+  "size": [
+   10,
+   6,
+   10
+  ],
+  "offset": [
+   0.0,
+   0.0,
+   0.0
+  ],
+  "colors": "KGR",
+  "triangles": 104
+ },
+ {
+  "mesh": "knight_BracerL",
+  "enemy": "knight",
+  "replaces": [
+   "BracerL"
+  ],
+  "anchor": "BracerL",
+  "size": [
+   10,
+   6,
+   10
+  ],
+  "offset": [
+   0.0,
+   0.0,
+   0.0
+  ],
+  "colors": "KGR",
+  "triangles": 104
+ },
+ {
+  "mesh": "knight_TowerShield",
+  "enemy": "knight",
+  "replaces": [
+   "TowerShield"
+  ],
+  "anchor": "TowerShield",
+  "size": [
+   16,
+   26,
+   2
+  ],
+  "offset": [
+   0.0,
+   0.0,
+   0.0
+  ],
+  "colors": "SKG",
+  "triangles": 234
+ },
+ {
+  "mesh": "knight_Mace",
+  "enemy": "knight",
+  "replaces": [
+   "MaceShaft",
+   "MaceHead",
+   "MacePommel"
+  ],
+  "anchor": "MaceShaft",
+  "size": [
+   8,
+   26,
+   8
+  ],
+  "offset": [
+   0.0,
+   2.5,
+   0.0
+  ],
+  "colors": "KGS",
+  "triangles": 254
+ },
+ {
+  "mesh": "archer_Hood",
+  "enemy": "archer",
+  "replaces": [
+   "Hood",
+   "Mask"
+  ],
+  "anchor": "Hood",
+  "size": [
+   12,
+   12,
+   12
+  ],
+  "offset": [
+   0.0,
+   0.0,
+   0.0
+  ],
+  "colors": "KDS",
+  "triangles": 220
+ },
+ {
+  "mesh": "archer_Jacket",
+  "enemy": "archer",
+  "replaces": [
+   "Jacket"
+  ],
+  "anchor": "Jacket",
+  "size": [
+   18,
+   14,
+   10
+  ],
+  "offset": [
+   0.0,
+   0.0,
+   0.0
+  ],
+  "colors": "KDR",
+  "triangles": 246
+ },
+ {
+  "mesh": "archer_Quiver",
+  "enemy": "archer",
+  "replaces": [
+   "Quiver"
+  ],
+  "anchor": "Quiver",
+  "size": [
+   5,
+   22,
+   5
+  ],
+  "offset": [
+   0.0,
+   3.0,
+   0.0
+  ],
+  "colors": "KNB",
+  "triangles": 144
+ },
+ {
+  "mesh": "archer_BracerR",
+  "enemy": "archer",
+  "replaces": [
+   "BracerR"
+  ],
+  "anchor": "BracerR",
+  "size": [
+   9,
+   6,
+   9
+  ],
+  "offset": [
+   0.0,
+   0.0,
+   0.0
+  ],
+  "colors": "KBA",
+  "triangles": 44
+ },
+ {
+  "mesh": "archer_BracerL",
+  "enemy": "archer",
+  "replaces": [
+   "BracerL"
+  ],
+  "anchor": "BracerL",
+  "size": [
+   9,
+   6,
+   9
+  ],
+  "offset": [
+   0.0,
+   0.0,
+   0.0
+  ],
+  "colors": "KBA",
+  "triangles": 44
+ },
+ {
+  "mesh": "archer_BootR",
+  "enemy": "archer",
+  "replaces": [
+   "BootR"
+  ],
+  "anchor": "BootR",
+  "size": [
+   10,
+   4,
+   11
+  ],
+  "offset": [
+   0.0,
+   0.0,
+   0.0
+  ],
+  "colors": "KDB",
+  "triangles": 60
+ },
+ {
+  "mesh": "archer_BootL",
+  "enemy": "archer",
+  "replaces": [
+   "BootL"
+  ],
+  "anchor": "BootL",
+  "size": [
+   10,
+   4,
+   11
+  ],
+  "offset": [
+   0.0,
+   0.0,
+   0.0
+  ],
+  "colors": "KDB",
+  "triangles": 60
+ },
+ {
+  "mesh": "archer_Bow",
+  "enemy": "archer",
+  "replaces": [
+   "BowGrip",
+   "BowLimbTop",
+   "BowLimbBottom"
+  ],
+  "anchor": "BowGrip",
+  "size": [
+   2,
+   34,
+   6
+  ],
+  "offset": [
+   0.0,
+   0.0,
+   2.0
+  ],
+  "colors": "NDW",
+  "triangles": 160
+ },
+ {
+  "mesh": "martyr_Mask",
+  "enemy": "martyr",
+  "replaces": [
+   "Mask"
+  ],
+  "anchor": "Mask",
+  "size": [
+   12,
+   12,
+   12
+  ],
+  "offset": [
+   0.0,
+   0.0,
+   0.0
+  ],
+  "colors": "KRD",
+  "triangles": 210
+ },
+ {
+  "mesh": "martyr_ChargePack",
+  "enemy": "martyr",
+  "replaces": [
+   "ChargePack"
+  ],
+  "anchor": "ChargePack",
+  "size": [
+   18,
+   14,
+   3
+  ],
+  "offset": [
+   0.0,
+   0.0,
+   0.0
+  ],
+  "colors": "KDR",
+  "triangles": 212
+ },
+ {
+  "mesh": "martyr_Bombs",
+  "enemy": "martyr",
+  "replaces": [
+   "Bomb1",
+   "Bomb2",
+   "Bomb3"
+  ],
+  "anchor": "ChargePack",
+  "size": [
+   12,
+   4,
+   1
+  ],
+  "offset": [
+   0.0,
+   -1.0,
+   -1.0
+  ],
+  "colors": "XK",
+  "triangles": 36
+ },
+ {
+  "mesh": "martyr_BracerR",
+  "enemy": "martyr",
+  "replaces": [
+   "BracerR"
+  ],
+  "anchor": "BracerR",
+  "size": [
+   9,
+   8,
+   9
+  ],
+  "offset": [
+   0.0,
+   0.0,
+   0.0
+  ],
+  "colors": "KRD",
+  "triangles": 52
+ },
+ {
+  "mesh": "martyr_BracerL",
+  "enemy": "martyr",
+  "replaces": [
+   "BracerL"
+  ],
+  "anchor": "BracerL",
+  "size": [
+   9,
+   8,
+   9
+  ],
+  "offset": [
+   0.0,
+   0.0,
+   0.0
+  ],
+  "colors": "KRD",
+  "triangles": 52
+ },
+ {
+  "mesh": "gatekeeper_Helmet",
+  "enemy": "gatekeeper",
+  "replaces": [
+   "Helmet"
+  ],
+  "anchor": "Helmet",
+  "size": [
+   15,
+   15,
+   13
+  ],
+  "offset": [
+   0.0,
+   0.0,
+   0.0
+  ],
+  "colors": "KGS",
+  "triangles": 256
+ },
+ {
+  "mesh": "gatekeeper_Crown",
+  "enemy": "gatekeeper",
+  "replaces": [
+   "Crown"
+  ],
+  "anchor": "Crown",
+  "size": [
+   15,
+   10,
+   13
+  ],
+  "offset": [
+   0.0,
+   1.5,
+   0.0
+  ],
+  "colors": "ADH",
+  "triangles": 232
+ },
+ {
+  "mesh": "gatekeeper_Cuirass",
+  "enemy": "gatekeeper",
+  "replaces": [
+   "Cuirass"
+  ],
+  "anchor": "Cuirass",
+  "size": [
+   18,
+   14,
+   10
+  ],
+  "offset": [
+   0.0,
+   0.0,
+   0.0
+  ],
+  "colors": "KGS",
+  "triangles": 364
+ },
+ {
+  "mesh": "gatekeeper_TowerR",
+  "enemy": "gatekeeper",
+  "replaces": [
+   "TowerR"
+  ],
+  "anchor": "TowerR",
+  "size": [
+   12,
+   8,
+   12
+  ],
+  "offset": [
+   0.0,
+   0.0,
+   0.0
+  ],
+  "colors": "KGS",
+  "triangles": 270
+ },
+ {
+  "mesh": "gatekeeper_TowerL",
+  "enemy": "gatekeeper",
+  "replaces": [
+   "TowerL"
+  ],
+  "anchor": "TowerL",
+  "size": [
+   12,
+   8,
+   12
+  ],
+  "offset": [
+   0.0,
+   0.0,
+   0.0
+  ],
+  "colors": "KGS",
+  "triangles": 270
+ },
+ {
+  "mesh": "gatekeeper_Skirt",
+  "enemy": "gatekeeper",
+  "replaces": [
+   "Skirt"
+  ],
+  "anchor": "Skirt",
+  "size": [
+   18,
+   6,
+   10
+  ],
+  "offset": [
+   0.0,
+   0.0,
+   0.0
+  ],
+  "colors": "KDR",
+  "triangles": 624
+ },
+ {
+  "mesh": "gatekeeper_BracerR",
+  "enemy": "gatekeeper",
+  "replaces": [
+   "BracerR"
+  ],
+  "anchor": "BracerR",
+  "size": [
+   10,
+   7,
+   10
+  ],
+  "offset": [
+   0.0,
+   0.0,
+   0.0
+  ],
+  "colors": "KGR",
+  "triangles": 64
+ },
+ {
+  "mesh": "gatekeeper_BracerL",
+  "enemy": "gatekeeper",
+  "replaces": [
+   "BracerL"
+  ],
+  "anchor": "BracerL",
+  "size": [
+   10,
+   7,
+   10
+  ],
+  "offset": [
+   0.0,
+   0.0,
+   0.0
+  ],
+  "colors": "KGR",
+  "triangles": 64
+ },
+ {
+  "mesh": "gatekeeper_ChainR",
+  "enemy": "gatekeeper",
+  "replaces": [
+   "ChainR"
+  ],
+  "anchor": "ChainR",
+  "size": [
+   3,
+   12,
+   3
+  ],
+  "offset": [
+   0.0,
+   0.0,
+   0.0
+  ],
+  "colors": "GK",
+  "triangles": 140
+ },
+ {
+  "mesh": "gatekeeper_ChainL",
+  "enemy": "gatekeeper",
+  "replaces": [
+   "ChainL"
+  ],
+  "anchor": "ChainL",
+  "size": [
+   3,
+   12,
+   3
+  ],
+  "offset": [
+   0.0,
+   0.0,
+   0.0
+  ],
+  "colors": "GK",
+  "triangles": 140
+ },
+ {
+  "mesh": "gatekeeper_GreaveR",
+  "enemy": "gatekeeper",
+  "replaces": [
+   "GreaveR"
+  ],
+  "anchor": "GreaveR",
+  "size": [
+   11,
+   10,
+   11
+  ],
+  "offset": [
+   0.0,
+   0.0,
+   0.0
+  ],
+  "colors": "KLS",
+  "triangles": 184
+ },
+ {
+  "mesh": "gatekeeper_GreaveL",
+  "enemy": "gatekeeper",
+  "replaces": [
+   "GreaveL"
+  ],
+  "anchor": "GreaveL",
+  "size": [
+   11,
+   10,
+   11
+  ],
+  "offset": [
+   0.0,
+   0.0,
+   0.0
+  ],
+  "colors": "KLS",
+  "triangles": 184
+ },
+ {
+  "mesh": "gatekeeper_BootR",
+  "enemy": "gatekeeper",
+  "replaces": [
+   "BootR"
+  ],
+  "anchor": "BootR",
+  "size": [
+   11,
+   4,
+   13
+  ],
+  "offset": [
+   0.0,
+   0.0,
+   0.0
+  ],
+  "colors": "KGS",
+  "triangles": 66
+ },
+ {
+  "mesh": "gatekeeper_BootL",
+  "enemy": "gatekeeper",
+  "replaces": [
+   "BootL"
+  ],
+  "anchor": "BootL",
+  "size": [
+   11,
+   4,
+   13
+  ],
+  "offset": [
+   0.0,
+   0.0,
+   0.0
+  ],
+  "colors": "KGS",
+  "triangles": 66
+ },
+ {
+  "mesh": "gatekeeper_BoltSword",
+  "enemy": "gatekeeper",
+  "replaces": [
+   "BoltHilt",
+   "BoltBlade"
+  ],
+  "anchor": "BoltHilt",
+  "size": [
+   13,
+   44,
+   3.0
+  ],
+  "offset": [
+   0.0,
+   15.5,
+   0.0
+  ],
+  "colors": "KLA",
+  "triangles": 354
+ }
+]

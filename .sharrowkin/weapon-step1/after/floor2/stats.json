@@ -1,0 +1,42 @@
+{
+ "garden_machete": {
+  "tris": 528,
+  "length": 4.25,
+  "objects": 1
+ },
+ "reed_saber": {
+  "tris": 890,
+  "length": 5.18,
+  "objects": 1
+ },
+ "mud_mallet": {
+  "tris": 1910,
+  "length": 4.95,
+  "objects": 1
+ },
+ "thorn_blade": {
+  "tris": 1356,
+  "length": 5.43,
+  "objects": 1
+ },
+ "root_hammer": {
+  "tris": 3322,
+  "length": 5.94,
+  "objects": 1
+ },
+ "reaper_blade": {
+  "tris": 2260,
+  "length": 6.24,
+  "objects": 3
+ },
+ "tidal_hammer": {
+  "tris": 3330,
+  "length": 6.15,
+  "objects": 3
+ },
+ "gardener_shears": {
+  "tris": 3746,
+  "length": 6.74,
+  "objects": 3
+ }
+}

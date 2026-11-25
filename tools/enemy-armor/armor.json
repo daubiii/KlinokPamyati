@@ -1,0 +1,740 @@
+{
+  "_about": [
+    "Сетки брони и оружия врагов этажа 1 — дословно из ТЗ врагов (разделы 2.1, 2.4).",
+    "Буквы — палитра Palette.Voxel: K S G L W H D R A B N X; '.' — пусто; e, c — неон (в меше K).",
+    "Сетки «вид спереди» идут сверху вниз; колонка 1 — правая сторона врага (+X), зритель стоит перед ним.",
+    "Сетки оружия «вид сбоку» в ТЗ пронумерованы снизу вверх; здесь они тоже сверху вниз (как читаются), grip — строка от низа.",
+    "Детали, описанные в ТЗ словами, задаются параметрами (type) — их строит build_armor.py.",
+    "Поля детали: enemy, name (имя меша = <enemy>_<name>), replaces — заглушки префаба, которые меш заменяет,",
+    "anchor — заглушка, по которой ставится меш, и её коробка в координатах детали (min, size в вокселях),",
+    "parts — объёмы: grid / depth / offset / cavity / back / backFill / wrap / sideColor / ring."
+  ],
+  "voxel": 0.125,
+  "details": [
+    {
+      "enemy": "guard", "name": "Helmet", "replaces": ["Helmet", "HelmetBrim"],
+      "anchor": { "part": "Helmet", "min": [2, 0, 2], "size": [12, 12, 12] },
+      "parts": [
+        {
+          "offset": [2, 0, 2], "depth": 12,
+          "cavity": { "size": [10, 10, 10], "offset": [1, 0, 1] },
+          "grid": [
+            "..KKKKKKKK..",
+            ".KGLLHHLLGK.",
+            "KGLLLHHLLLGK",
+            "KSGGGGGGGGSK",
+            "KDRRARRARRDK",
+            "KDKKKGGKKKDK",
+            "KDKeKGGKeKDK",
+            "KDKKKGGKKKDK",
+            "KDRRKGGKRRDK",
+            "KDRRK..KRRDK",
+            ".KDRK..KRDK.",
+            "..KK....KK.."
+          ],
+          "back": [
+            "..KKKKKKKK..",
+            ".KGLLLLLLGK.",
+            "KGLLLLLLLLGK",
+            "KGGGGGGGGGGK",
+            "KRARRRARRRAK",
+            "KRRRRRRRRRRK",
+            "KRRRRRRRRRRK",
+            "KRRRRRRRRRRK",
+            "KRRRRRRRRRRK",
+            "KRRRR..RRRRK",
+            ".KRRR..RRRK.",
+            "..DD....DD.."
+          ]
+        },
+        { "type": "ring", "offset": [0, 7, 0], "size": [16, 1, 16], "hole": [12, 12], "color": "R", "ring": "D" }
+      ]
+    },
+    {
+      "enemy": "guard", "name": "Cuirass", "replaces": ["Cuirass"],
+      "anchor": { "part": "Cuirass", "min": [0, 0, 0], "size": [18, 14, 10] },
+      "parts": [
+        {
+          "depth": 10, "cavity": { "size": [16, 13, 8], "offset": [1, 0, 1] },
+          "grid": [
+            ".KKKKKK....KKKKKK.",
+            "KGLLLLGKKKKGLLLLGK",
+            "KGLHHLLGGGGLLHHLGK",
+            "KGLHLLLGLLGLLLHLGK",
+            "KSGLLLLGLLGLLLLGSK",
+            "KSGGLLLGLLGLLLGGSK",
+            "KRSGGLLGLLGLLGGSRK",
+            "KRRSGGGGLLGGGGSRRK",
+            "KDRRSSGGLLGGSSRRDK",
+            "KDARRRSSGGSSRRRADK",
+            "KDRRRRRSGGSRRRRRDK",
+            "KKKKKKKKKKKKKKKKKK",
+            "KBBABBBBBBBBBBABBK",
+            "KKKKKKKKKKKKKKKKKK"
+          ],
+          "backRule": { "from": "front", "map": { "H": "L", "A": "R" }, "keepRows": [13], "straps": "B" }
+        }
+      ]
+    },
+    {
+      "enemy": "guard", "name": "PauldronR", "replaces": ["PauldronR"], "mirrorOf": null,
+      "anchor": { "part": "PauldronR", "min": [0, 0, 0], "size": [11, 5, 11] },
+      "parts": [
+        { "type": "steps", "steps": [
+          { "size": [11, 2, 11], "grid": ["KRRRRARRRRK", "KKKKKKKKKKK"], "sideColor": "R" },
+          { "size": [10, 2, 10], "grid": ["KLLLLLLLLK", "KGGGGGGGGK"], "sideColor": "G" },
+          { "size": [8, 1, 8], "grid": ["KGGGGGGK"], "sideColor": "G" }
+        ] }
+      ]
+    },
+    {
+      "enemy": "guard", "name": "PauldronL", "mirror": "PauldronR", "replaces": ["PauldronL"],
+      "anchor": { "part": "PauldronL", "min": [0, 0, 0], "size": [11, 5, 11] }
+    },
+    {
+      "enemy": "guard", "name": "BracerR", "replaces": ["BracerR"],
+      "anchor": { "part": "BracerR", "min": [0, 0, 0], "size": [10, 5, 10] },
+      "parts": [
+        { "depth": 10, "wrap": true, "cavity": { "size": [8, 5, 8], "offset": [1, 0, 1] },
+          "grid": ["KKKKKKKKKK", "KRRRRRRRRK", "KRRRARRRRK", "KRRRRRRRRK", "KKKKKKKKKK"] }
+      ]
+    },
+    { "enemy": "guard", "name": "BracerL", "mirror": "BracerR", "replaces": ["BracerL"],
+      "anchor": { "part": "BracerL", "min": [0, 0, 0], "size": [10, 5, 10] } },
+    {
+      "enemy": "guard", "name": "Tabard", "replaces": ["Tabard"],
+      "anchor": { "part": "Tabard", "min": [0, 0, 0], "size": [8, 12, 1] },
+      "parts": [
+        { "depth": 1, "grid": [
+          "KKKKKKKK",
+          "KDDDDDDK",
+          "KDDAADDK",
+          "KDAWWADK",
+          "KDDAADDK",
+          "KDDDDDDK",
+          "KDDDDDDK",
+          "KDDDDDDK",
+          "KDDDDDDK",
+          ".KDDDDK.",
+          ".KDKKDK.",
+          "..K..K.."
+        ] }
+      ]
+    },
+    {
+      "enemy": "guard", "name": "GreaveR", "replaces": ["GreaveR"],
+      "anchor": { "part": "GreaveR", "min": [0, 0, 0], "size": [10, 9, 10] },
+      "parts": [
+        { "depth": 10, "cavity": { "size": [8, 9, 8], "offset": [1, 0, 1] }, "backFill": "auto",
+          "grid": [
+            "KKKKKKKKKK",
+            "KGLLLLLLGK",
+            "KGLHHLLLGK",
+            "KSGLLLLGSK",
+            "KSGGLLGGSK",
+            "KRSGGGGSRK",
+            "KRRSSSSRRK",
+            "KDRRRRRRDK",
+            "KKKKKKKKKK"
+          ] }
+      ]
+    },
+    { "enemy": "guard", "name": "GreaveL", "mirror": "GreaveR", "replaces": ["GreaveL"],
+      "anchor": { "part": "GreaveL", "min": [0, 0, 0], "size": [10, 9, 10] } },
+    {
+      "enemy": "guard", "name": "BootR", "replaces": ["BootR"],
+      "anchor": { "part": "BootR", "min": [0, 0, 0], "size": [10, 3, 12] },
+      "parts": [
+        { "depth": 12, "wrap": true, "cavity": { "size": [8, 2, 8], "offset": [1, 1, 3] },
+          "grid": ["KDDDDDDDDK", "KBBBBBBBBK", "KKKKKKKKKK"] }
+      ]
+    },
+    { "enemy": "guard", "name": "BootL", "mirror": "BootR", "replaces": ["BootL"],
+      "anchor": { "part": "BootL", "min": [0, 0, 0], "size": [10, 3, 12] } },
+    {
+      "enemy": "guard", "name": "Buckler", "kind": "weapon", "replaces": ["Buckler"],
+      "anchor": { "part": "Buckler", "min": [0, 0, 0], "size": [12, 12, 2] },
+      "parts": [
+        { "depth": 2, "backFill": "S", "grid": [
+          "....KKKK....",
+          "..KKRRRRKK..",
+          ".KRRAAAARRK.",
+          ".KRAGLLGARK.",
+          "KRAGLHHLGARK",
+          "KRAGLHLLGARK",
+          "KRAGLLLLGARK",
+          "KRAGGLLGGARK",
+          ".KRAGGGGARK.",
+          ".KRRAAAARRK.",
+          "..KKRRRRKK..",
+          "....KKKK...."
+        ] }
+      ]
+    },
+    {
+      "enemy": "guard", "name": "Sword", "kind": "weapon", "replaces": ["Grip", "Blade", "Guard", "Pommel"],
+      "anchor": { "part": "Grip", "min": [2, 2, 0.5], "size": [3, 5, 2] },
+      "parts": [
+        { "type": "side", "frame": 3, "grid": [
+          "...K...",
+          "..KHK..",
+          ".KHWLK.",
+          ".KHWLK.",
+          ".KHWLK.",
+          ".KHRLK.",
+          ".KHWLK.",
+          ".KRWLK.",
+          ".KHWRK.",
+          ".KHWLK.",
+          ".KHWLK.",
+          ".KRRLK.",
+          ".KHWLK.",
+          ".KHWLK.",
+          ".KHWGK.",
+          ".KHWGK.",
+          ".KLWGK.",
+          ".KLGGK.",
+          ".KGGSK.",
+          "KKKKKKK",
+          "KAAAAAK",
+          "KDAAADK",
+          "KKKKKKK",
+          "..KBK..",
+          "..KDK..",
+          "..KBK..",
+          "..KDK..",
+          "..KBK..",
+          ".KAAAK.",
+          ".KKKKK."
+        ], "depths": { "1-2": 2, "3-7": 2, "8-11": 3, "12-30": 1 } }
+      ]
+    },
+
+    {
+      "enemy": "shade", "name": "Hood", "replaces": ["Hood", "HoodTail"],
+      "anchor": { "part": "Hood", "min": [0, 0, 0], "size": [13, 13, 13] },
+      "parts": [
+        { "depth": 13, "backFill": "S", "cavity": { "size": [10, 10, 10], "offset": [1, 0, 1] }, "grid": [
+          ".....KKK.....",
+          "...KKSSSKK...",
+          "..KSSSGSSSK..",
+          ".KSSGSSSGSSK.",
+          ".KSGKKKKKGSK.",
+          "KSSKKKKKKKSSK",
+          "KSSKeKKKeKSSK",
+          "KSSKKKKKKKSSK",
+          "KSDKKKKKKKDSK",
+          "KSDKKKKKKKDSK",
+          "KDDSKKKKKSDDK",
+          ".KDDSKKKSDDK.",
+          "..KKKK.KKKK.."
+        ] },
+        { "offset": [5, 9, 13], "depth": 4, "grid": ["KSK", "SSS", "KSK"], "backFill": "D" }
+      ]
+    },
+    {
+      "enemy": "shade", "name": "Pelerine", "replaces": ["Pelerine"],
+      "anchor": { "part": "Pelerine", "min": [0, 0, 0], "size": [18, 8, 10] },
+      "parts": [
+        { "depth": 10, "backFill": "S", "cavity": { "size": [16, 8, 8], "offset": [1, 0, 1] }, "grid": [
+          "KKKKKKKKKKKKKKKKKK",
+          "KSSSSSSDDDDSSSSSSK",
+          "KSGSSSDDKKDDSSSGSK",
+          "KDSSSDDKKKKDDSSSDK",
+          ".KDSDDK....KDDSDK.",
+          ".KDDDK......KDDDK.",
+          "..KDK........KDK..",
+          "...K..........K..."
+        ] }
+      ]
+    },
+    {
+      "enemy": "shade", "name": "Cloak", "replaces": ["Cloak"],
+      "anchor": { "part": "Cloak", "min": [0, 0, 0], "size": [16, 27, 1] },
+      "parts": [
+        { "depth": 1, "repeat": { "rows": "2-20", "pattern": ["KSSDSSDSSDSSDSSK", "KSDDSSDDSSDDSSDK"] }, "grid": [
+          "KKKKKKKKKKKKKKKK",
+          "#", "#", "#", "#", "#", "#", "#", "#", "#", "#", "#", "#", "#", "#", "#", "#", "#", "#", "#",
+          "KSSDSSDSSDSSDSSK",
+          "KSSDKSDSSDKSDSSK",
+          ".KSDK.KSSK.KSDK.",
+          ".KSK..KSDK..KSK.",
+          "..K...KSSK...K..",
+          "......KSK.......",
+          ".......K........"
+        ] }
+      ]
+    },
+    {
+      "enemy": "shade", "name": "WrapLegR", "replaces": ["WrapLegR"],
+      "anchor": { "part": "WrapLegR", "min": [0, 0, 0], "size": [9, 9, 9] },
+      "parts": [ { "type": "bands", "size": [9, 9, 9], "cavity": [8, 9, 8], "rows": ["K", "D", "S", "D", "S", "D", "S", "D", "K"] } ]
+    },
+    { "enemy": "shade", "name": "WrapLegL", "mirror": "WrapLegR", "replaces": ["WrapLegL"],
+      "anchor": { "part": "WrapLegL", "min": [0, 0, 0], "size": [9, 9, 9] } },
+    {
+      "enemy": "shade", "name": "WrapArmR", "replaces": ["WrapArmR"],
+      "anchor": { "part": "WrapArmR", "min": [0, 0, 0], "size": [9, 7, 9] },
+      "parts": [ { "type": "bands", "size": [9, 7, 9], "cavity": [8, 7, 8], "rows": ["K", "D", "S", "D", "S", "D", "K"] } ]
+    },
+    { "enemy": "shade", "name": "WrapArmL", "mirror": "WrapArmR", "replaces": ["WrapArmL"],
+      "anchor": { "part": "WrapArmL", "min": [0, 0, 0], "size": [9, 7, 9] } },
+    {
+      "enemy": "shade", "name": "DaggerR", "kind": "weapon", "replaces": ["DaggerGripR", "DaggerBladeR", "DaggerGuardR"],
+      "anchor": { "part": "DaggerGripR", "min": [1, 0.5, 0], "size": [3, 5, 2] },
+      "parts": [
+        { "type": "side", "frame": 2, "grid": [
+          "...K.",
+          "..KHK",
+          "..KHK",
+          ".KHWK",
+          ".KHWK",
+          ".KHWK",
+          ".KWLK",
+          ".KWLK",
+          "KKKKK",
+          "KSGSK",
+          "KKKKK",
+          ".KDK.",
+          ".KBK.",
+          ".KDK.",
+          ".KSK.",
+          ".KKK."
+        ], "depths": { "1-5": 2, "6-8": 2, "9-16": 1 } }
+      ]
+    },
+    {
+      "enemy": "shade", "name": "DaggerL", "kind": "weapon", "copyOf": "DaggerR", "replaces": ["DaggerGripL", "DaggerBladeL", "DaggerGuardL"],
+      "anchor": { "part": "DaggerGripL", "min": [1, 0.5, 0], "size": [3, 5, 2] }
+    },
+
+    {
+      "enemy": "knight", "name": "Helmet", "replaces": ["Helmet"],
+      "anchor": { "part": "Helmet", "min": [0, 0, 0], "size": [13, 14, 13] },
+      "parts": [
+        { "depth": 13, "backFill": "S", "cavity": { "size": [10, 10, 10], "offset": [1, 0, 1] }, "grid": [
+          "....KKKKK....",
+          "..KKGLLLGKK..",
+          ".KGLLHHLLLGK.",
+          "KGLLHHLLLLLGK",
+          "KGLLLLLLLLLGK",
+          "KSGGGGGGGGGSK",
+          "KSKKKKKKKKKSK",
+          "KSKeKKGKKeKSK",
+          "KSKKKKGKKKKSK",
+          "KSGGGKGKGGGSK",
+          "KSGAGKGKGAGSK",
+          "KSGGGKGKGGGSK",
+          "KSSGGGGGGGSSK",
+          ".KKKKKKKKKKK."
+        ] }
+      ]
+    },
+    {
+      "enemy": "knight", "name": "Crest", "replaces": ["Crest"],
+      "anchor": { "part": "Crest", "min": [0, 0, 0], "size": [3, 6, 8] },
+      "parts": [ { "depth": 8, "backFill": "D", "grid": ["DWD", "DAD", "DAD", "DAD", "DAD", "DDD"] } ]
+    },
+    {
+      "enemy": "knight", "name": "Cuirass", "replaces": ["Cuirass"],
+      "anchor": { "part": "Cuirass", "min": [0, 0, 0], "size": [18, 14, 10] },
+      "parts": [
+        { "depth": 10, "cavity": { "size": [16, 13, 8], "offset": [1, 0, 1] }, "grid": [
+          ".KKKKKK....KKKKKK.",
+          "KSGGGGSKKKKSGGGGSK",
+          "KGLLLLGSGGSGLLLLGK",
+          "KGLHHLGSAASGLHHLGK",
+          "KGLHLLGSAASGLLHLGK",
+          "KGLLLLGAAAAGLLLLGK",
+          "KSGLLGSAAAASGLLGSK",
+          "KSGGGGSSAASSGGGGSK",
+          "KSSGGSSSAASSSGGSSK",
+          "KKSSSSSSAASSSSSSKK",
+          "KSSKKSSSSSSSSKKSSK",
+          "KKKKKKKKKKKKKKKKKK",
+          "KGGLGGGGAAGGGGLGGK",
+          "KKKKKKKKKKKKKKKKKK"
+        ], "backRule": { "from": "front", "map": { "H": "G", "L": "G", "A": "S" }, "keepRows": [13], "rustBelow": 9 } }
+      ]
+    },
+    {
+      "enemy": "knight", "name": "PauldronR", "replaces": ["PauldronR"],
+      "anchor": { "part": "PauldronR", "min": [0, 0, 0], "size": [13, 6, 13] },
+      "parts": [
+        { "type": "steps", "steps": [
+          { "size": [13, 2, 13], "grid": ["KAAAAAAAAAAAK", "KKKKKKKKKKKKK"], "sideColor": "A" },
+          { "size": [12, 3, 12], "grid": ["KLLLLLLLLLLK", "KLLLLLLLLLLK", "KGGGGGGGGGGK"], "sideColor": "G" },
+          { "size": [10, 1, 10], "grid": ["KGGGGGGGGK"], "sideColor": "G" }
+        ] }
+      ]
+    },
+    { "enemy": "knight", "name": "PauldronL", "mirror": "PauldronR", "replaces": ["PauldronL"],
+      "anchor": { "part": "PauldronL", "min": [0, 0, 0], "size": [13, 6, 13] } },
+    {
+      "enemy": "knight", "name": "Faulds", "replaces": ["Faulds"],
+      "anchor": { "part": "Faulds", "min": [0, 0, 0], "size": [18, 4, 10] },
+      "parts": [
+        { "depth": 10, "wrap": true, "cavity": { "size": [16, 4, 8], "offset": [1, 0, 1] }, "grid": [
+          "KSGSGSGSGSGSGSGSGK",
+          "KGSGSGSGSGSGSGSGSK",
+          "KSGSGSGSGSGSGSGSGK",
+          "KRRRRRRRRRRRRRRRRK"
+        ] }
+      ]
+    },
+    {
+      "enemy": "knight", "name": "GreaveR", "copyFrom": "guard_GreaveR", "replaces": ["GreaveR"],
+      "anchor": { "part": "GreaveR", "min": [0, 0, 0], "size": [10, 9, 10] }
+    },
+    { "enemy": "knight", "name": "GreaveL", "copyFrom": "guard_GreaveR", "replaces": ["GreaveL"],
+      "anchor": { "part": "GreaveL", "min": [0, 0, 0], "size": [10, 9, 10] } },
+    { "enemy": "knight", "name": "BootR", "copyFrom": "guard_BootR", "replaces": ["BootR"],
+      "anchor": { "part": "BootR", "min": [0, 0, 0], "size": [10, 3, 12] } },
+    { "enemy": "knight", "name": "BootL", "copyFrom": "guard_BootR", "replaces": ["BootL"],
+      "anchor": { "part": "BootL", "min": [0, 0, 0], "size": [10, 3, 12] } },
+    {
+      "enemy": "knight", "name": "BracerR", "replaces": ["BracerR"],
+      "anchor": { "part": "BracerR", "min": [0, 0, 0], "size": [10, 6, 10] },
+      "parts": [
+        { "depth": 10, "wrap": true, "cavity": { "size": [8, 6, 8], "offset": [1, 0, 1] },
+          "grid": ["KKKKKKKKKK", "KLLLLLLLLK", "KGGGAGGGGK", "KGGGGGGGGK", "KRRRRRRRRK", "KKKKKKKKKK"] }
+      ]
+    },
+    { "enemy": "knight", "name": "BracerL", "mirror": "BracerR", "replaces": ["BracerL"],
+      "anchor": { "part": "BracerL", "min": [0, 0, 0], "size": [10, 6, 10] } },
+    {
+      "enemy": "knight", "name": "TowerShield", "kind": "weapon", "replaces": ["TowerShield"],
+      "anchor": { "part": "TowerShield", "min": [0, 0, 0], "size": [16, 26, 2] },
+      "parts": [
+        { "depth": 2, "backRule": { "fill": "S", "handles": "B" }, "grid": [
+          ".KKKKKKKKKKKKKK.",
+          "KGLLLLLLLLLLLLGK",
+          "KLHALLLLLLLLALGK",
+          "KLHGGGGAAGGGGGSK",
+          "KLGGGGGAAGGGGGSK",
+          "KLGGGGGAAGGGGGSK",
+          "KLGGGGGAAGGGGGSK",
+          "KLGGGGGAAGGGGGSK",
+          "KLGAAAAAAAAAAGSK",
+          "KLGAAAAWWAAAAGSK",
+          "KGGGGGGAAGGGGGSK",
+          "KGSGGGGAAGGGGSSK",
+          "KGGGGGGAAGGGGGSK",
+          "KGSGGGGAAGGGGSSK",
+          "KGGGGGGAAGGGGGSK",
+          "KGSGGGGAAGGGGSSK",
+          "KGGGGGGAAGGGGGSK",
+          "KRGGGGGAAGGGGGRK",
+          "KRSGGGGAAGGGGSRK",
+          "KRRGGGGAAGGGGRRK",
+          "KSRRGGGAAGGGRRSK",
+          "KSARRGGAAGGRRASK",
+          ".KSRRRGAAGRRRSK.",
+          ".KSSRRRRRRRRSSK.",
+          "..KKSSSSSSSSKK..",
+          "....KKKKKKKK...."
+        ] }
+      ]
+    },
+    {
+      "enemy": "knight", "name": "Mace", "kind": "weapon", "replaces": ["MaceShaft", "MaceHead", "MacePommel"],
+      "anchor": { "part": "MaceShaft", "min": [2.5, 2, 1.5], "size": [3, 17, 3] },
+      "parts": [
+        { "type": "side", "frame": 6, "grid": [
+          "..KKKK..",
+          ".KLHLGK.",
+          "KLHLLGSK",
+          "KGLLLGSK",
+          "KGLAAGSK",
+          "KSGGGSSK",
+          ".KSSSSK.",
+          "..KGGK..",
+          "...KNK..",
+          "...KBK..",
+          "...KNK..",
+          "...KNK..",
+          "...KBK..",
+          "...KNK..",
+          "...KNK..",
+          "...KBK..",
+          "...KNK..",
+          "...KNK..",
+          "...KBK..",
+          "...KBK..",
+          "...KBK..",
+          "...KBK..",
+          "...KNK..",
+          "...KNK..",
+          "..KAAK..",
+          "..KKKK.."
+        ], "depths": { "1-2": 2, "3-18": 2, "19": 2, "20-26": 6 } },
+        { "type": "flanges", "rows": "21-24", "size": [1, 4, 2], "color": "G", "ring": "K" }
+      ]
+    },
+
+    {
+      "enemy": "archer", "name": "Hood", "replaces": ["Hood", "Mask"],
+      "anchor": { "part": "Hood", "min": [0, 0, 0], "size": [12, 12, 12] },
+      "parts": [
+        { "depth": 12, "backFill": "D", "cavity": { "size": [10, 10, 10], "offset": [1, 0, 1] }, "grid": [
+          "...KKKKKK...",
+          ".KKDDDDDDKK.",
+          "KDDRDDDDRDDK",
+          "KDRDDDDDDRDK",
+          "KDDKKKKKKDDK",
+          "KDKKeKKeKKDK",
+          "KDKSSSSSSKDK",
+          "KDKSWSSWSKDK",
+          "KDKSSSSSSKDK",
+          "KDDKSSSSKDDK",
+          ".KDDKKKKDDK.",
+          "..KKK..KKK.."
+        ] }
+      ]
+    },
+    {
+      "enemy": "archer", "name": "Jacket", "replaces": ["Jacket"],
+      "anchor": { "part": "Jacket", "min": [0, 0, 0], "size": [18, 14, 10] },
+      "parts": [
+        { "depth": 10, "cavity": { "size": [16, 13, 8], "offset": [1, 0, 1] }, "grid": [
+          "..KKKKK....KKKKK..",
+          ".KDDDDDKKKKDDDDDK.",
+          "KDRRRRRDDDDRRRRBDK",
+          "KDRRRRRDDDDRRRBBDK",
+          "KDRRRRRDDDDRRBBRDK",
+          "KDRRRRRDDDDRBBRRDK",
+          "KDRRRRRDDDBBBRRRDK",
+          "KDRRRRRDDBAABRRRDK",
+          "KDRRRRRDBBAADRRRDK",
+          "KDRRRRBBBDDDDRRRDK",
+          "KDRRRBBRDDDDRRRRDK",
+          "KKKKKKKKKKKKKKKKKK",
+          "KBBBBBBBAABBBBBBBK",
+          "KKKKKKKKKKKKKKKKKK"
+        ], "backRule": { "from": "front", "map": { "B": "R", "A": "R" }, "keepRows": [13] } }
+      ]
+    },
+    {
+      "enemy": "archer", "name": "Quiver", "replaces": ["Quiver"],
+      "anchor": { "part": "Quiver", "min": [0, 0, 0], "size": [5, 16, 5] },
+      "parts": [ { "type": "quiver" } ]
+    },
+    {
+      "enemy": "archer", "name": "BracerR", "replaces": ["BracerR"],
+      "anchor": { "part": "BracerR", "min": [0, 0, 0], "size": [9, 6, 9] },
+      "parts": [ { "type": "bands", "size": [9, 6, 9], "cavity": [8, 6, 8], "rows": ["K", "B", "B", "A", "B", "K"] } ]
+    },
+    { "enemy": "archer", "name": "BracerL", "mirror": "BracerR", "replaces": ["BracerL"],
+      "anchor": { "part": "BracerL", "min": [0, 0, 0], "size": [9, 6, 9] } },
+    {
+      "enemy": "archer", "name": "BootR", "replaces": ["BootR"],
+      "anchor": { "part": "BootR", "min": [0, 0, 0], "size": [10, 4, 11] },
+      "parts": [
+        { "depth": 11, "wrap": true, "cavity": { "size": [8, 3, 8], "offset": [1, 1, 2] },
+          "grid": ["KDDDDDDDDK", "KBBBBBBBBK", "KBBBBBBBBK", "KKKKKKKKKK"] }
+      ]
+    },
+    { "enemy": "archer", "name": "BootL", "mirror": "BootR", "replaces": ["BootL"],
+      "anchor": { "part": "BootL", "min": [0, 0, 0], "size": [10, 4, 11] } },
+    {
+      "enemy": "archer", "name": "Bow", "kind": "weapon", "replaces": ["BowGrip", "BowLimbTop", "BowLimbBottom"],
+      "anchor": { "part": "BowGrip", "min": [0, 14.5, 0], "size": [2, 5, 2] },
+      "parts": [ { "type": "bow" } ]
+    },
+
+    {
+      "enemy": "martyr", "name": "Mask", "replaces": ["Mask"],
+      "anchor": { "part": "Mask", "min": [0, 0, 0], "size": [12, 12, 12] },
+      "parts": [
+        { "depth": 12, "backFill": "R", "cavity": { "size": [9, 9, 9], "offset": [1, 0, 1] }, "grid": [
+          "..KKKKKKKK..",
+          ".KRRRRRRcRK.",
+          "KRRWRRRRcRRK",
+          "KRWRRRRcRRRK",
+          "KRRKKRRKKRRK",
+          "KRKeeKKeeKRK",
+          "KRRKKRcKKRRK",
+          "KRRRRRcRRRRK",
+          "KDRKKKKKKRDK",
+          "KDRKcKKcKRDK",
+          ".KDRKKKKRDK.",
+          "..KKKKKKKK.."
+        ] }
+      ]
+    },
+    {
+      "enemy": "martyr", "name": "ChargePack", "replaces": ["ChargePack"],
+      "anchor": { "part": "ChargePack", "min": [0, 0, 0], "size": [18, 14, 3] },
+      "parts": [
+        { "depth": 3, "backFill": "D", "frontHoles": "X", "grid": [
+          ".KKKKKKKKKKKKKKKK.",
+          "KRRRRRBRRRRBRRRRRK",
+          "KRWRRRRBRRBRRRcRRK",
+          "KRRRRRRRBBRRRcRRRK",
+          "KRKKKKRKKKKRKKKKRK",
+          "KRKAAKRKAAKRKAAKRK",
+          "KRKXXKRKXXKRKXXKRK",
+          "KBKXXKBKXXKBKXXKBK",
+          "KRKXXKRKXXKRKXXKRK",
+          "KRKXXKRKXXKRKXXKRK",
+          "KRKKKKRKKKKRKKKKRK",
+          "KDRRRRRRcRRRRRRRDK",
+          "KDDRRRcRRRRRRRRDDK",
+          ".KKKKKKKKKKKKKKKK."
+        ] }
+      ]
+    },
+    {
+      "enemy": "martyr", "name": "Bombs", "kind": "glow", "replaces": ["Bomb1", "Bomb2", "Bomb3"],
+      "anchor": { "part": "ChargePack", "min": [0, 0, 0], "size": [18, 14, 3] },
+      "parts": [
+        { "depth": 1, "onlyLetters": "X", "grid": [
+          ".KKKKKKKKKKKKKKKK.",
+          "KRRRRRBRRRRBRRRRRK",
+          "KRWRRRRBRRBRRRcRRK",
+          "KRRRRRRRBBRRRcRRRK",
+          "KRKKKKRKKKKRKKKKRK",
+          "KRKAAKRKAAKRKAAKRK",
+          "KRKXXKRKXXKRKXXKRK",
+          "KBKXXKBKXXKBKXXKBK",
+          "KRKXXKRKXXKRKXXKRK",
+          "KRKXXKRKXXKRKXXKRK",
+          "KRKKKKRKKKKRKKKKRK",
+          "KDRRRRRRcRRRRRRRDK",
+          "KDDRRRcRRRRRRRRDDK",
+          ".KKKKKKKKKKKKKKKK."
+        ] }
+      ]
+    },
+    {
+      "enemy": "martyr", "name": "BracerR", "replaces": ["BracerR"],
+      "anchor": { "part": "BracerR", "min": [0, 0, 0], "size": [9, 8, 9] },
+      "parts": [ { "type": "bands", "size": [9, 8, 9], "cavity": [8, 8, 8], "rows": ["K", "R", "D", "R", "R", "D", "R", "K"] } ]
+    },
+    { "enemy": "martyr", "name": "BracerL", "mirror": "BracerR", "replaces": ["BracerL"],
+      "anchor": { "part": "BracerL", "min": [0, 0, 0], "size": [9, 8, 9] } },
+
+    {
+      "enemy": "gatekeeper", "name": "Helmet", "replaces": ["Helmet"],
+      "anchor": { "part": "Helmet", "min": [0, 0, 0], "size": [15, 15, 13] },
+      "parts": [
+        { "depth": 13, "cavity": { "size": [10, 10, 10], "offset": [2, 0, 1] }, "grid": [
+          "..KKKKKKKKKKK..",
+          ".KSGGGGGGGGGSK.",
+          "KSGLLHHLLLLLGSK",
+          "KSGLHHLLLLLLGSK",
+          "KSSGGGGGGGGGSSK",
+          "KSKGKGKGKGKGKSK",
+          "KSKGeGKGKGeGKSK",
+          "KSGGGGGGGGGGGSK",
+          "KSKGKGKGKGKGKSK",
+          "KSKGKGKGKGKGKSK",
+          "KSGGGGGGGGGGGSK",
+          "KSKGKGKGKGKGKSK",
+          "KSSRGRGRGRGRSSK",
+          ".KSSRRRRRRRSSK.",
+          "..KKKKKKKKKKK.."
+        ], "backRule": { "fill": "G", "rustBelow": 11 } }
+      ]
+    },
+    {
+      "enemy": "gatekeeper", "name": "Crown", "replaces": ["Crown"],
+      "anchor": { "part": "Crown", "min": [0, 0, 0], "size": [15, 7, 13] },
+      "parts": [ { "type": "crown", "size": [15, 2, 13], "teethX": [2, 5, 8, 11, 14], "teethH": [3, 4, 5, 4, 3] } ]
+    },
+    {
+      "enemy": "gatekeeper", "name": "Cuirass", "replaces": ["Cuirass"],
+      "anchor": { "part": "Cuirass", "min": [0, 0, 0], "size": [18, 14, 10] },
+      "parts": [
+        { "depth": 10, "cavity": { "size": [16, 13, 8], "offset": [1, 0, 1] }, "grid": [
+          ".KKKKKKKKKKKKKKKK.",
+          "KSGGGGGGGGGGGGGGSK",
+          "KGLLHHLLGGLLHHLLGK",
+          "KGLHLLLGKKGLLLHLGK",
+          "KGLLLLGKAAKGLLLLGK",
+          "KSGLLGKAWWAKGLLGSK",
+          "KSGGGGKAccAKGGGGSK",
+          "KSSGGGGKccKGGGGSSK",
+          "KRSSGGGKccKGGGSSRK",
+          "KRRSSGGGKKGGGSSRRK",
+          "KDRRSSSSSSSSSSRRDK",
+          "KKKKKKKKKKKKKKKKKK",
+          "KGAGAGAGAAGAGAGAGK",
+          "KKKKKKKKKKKKKKKKKK"
+        ], "backRule": { "from": "front", "map": { "H": "G", "L": "G", "A": "G", "W": "G", "c": "G" }, "keepRows": [13], "rustBelow": 9 } }
+      ]
+    },
+    {
+      "enemy": "gatekeeper", "name": "TowerR", "replaces": ["TowerR"],
+      "anchor": { "part": "TowerR", "min": [0, 0, 0], "size": [12, 8, 12] },
+      "parts": [ { "type": "tower", "size": [12, 8, 12] } ]
+    },
+    { "enemy": "gatekeeper", "name": "TowerL", "mirror": "TowerR", "replaces": ["TowerL"],
+      "anchor": { "part": "TowerL", "min": [0, 0, 0], "size": [12, 8, 12] } },
+    {
+      "enemy": "gatekeeper", "name": "Skirt", "replaces": ["Skirt"],
+      "anchor": { "part": "Skirt", "min": [0, 0, 0], "size": [18, 6, 10] },
+      "parts": [
+        { "depth": 10, "wrap": true, "cavity": { "size": [16, 4, 8], "offset": [1, 2, 1] }, "grid": [
+          "KKGKGKGKGKGKGKGKKK",
+          "KKGKGKGKGKGKGKGKKK",
+          "KKGKGKGKGKGKGKGKKK",
+          "KKGKGKGKGKGKGKGKKK",
+          "KRRRRRRRRRRRRRRRRK",
+          "R.R.R.R.R.R.R.R.R."
+        ] }
+      ]
+    },
+    {
+      "enemy": "gatekeeper", "name": "BracerR", "replaces": ["BracerR"],
+      "anchor": { "part": "BracerR", "min": [0, 0, 0], "size": [10, 7, 10] },
+      "parts": [ { "type": "bands", "size": [10, 7, 10], "cavity": [8, 7, 8], "rows": ["R", "G", "G", "G", "G", "G", "R"] } ]
+    },
+    { "enemy": "gatekeeper", "name": "BracerL", "mirror": "BracerR", "replaces": ["BracerL"],
+      "anchor": { "part": "BracerL", "min": [0, 0, 0], "size": [10, 7, 10] } },
+    {
+      "enemy": "gatekeeper", "name": "ChainR", "replaces": ["ChainR"],
+      "anchor": { "part": "ChainR", "min": [0, 0, 1], "size": [3, 12, 1] },
+      "parts": [ { "type": "chain", "links": 4 } ]
+    },
+    { "enemy": "gatekeeper", "name": "ChainL", "copyOf": "ChainR", "replaces": ["ChainL"],
+      "anchor": { "part": "ChainL", "min": [0, 0, 1], "size": [3, 12, 1] } },
+    {
+      "enemy": "gatekeeper", "name": "GreaveR", "replaces": ["GreaveR"],
+      "anchor": { "part": "GreaveR", "min": [0, 0, 0], "size": [11, 10, 11] },
+      "parts": [
+        { "depth": 11, "backFill": "auto", "cavity": { "size": [8, 9, 8], "offset": [1, 0, 1] }, "grid": [
+          "KKKKKKKKKKK",
+          "KGLLLLLLLGK",
+          "KGLHHLLLLGK",
+          "KSGLLLLLGSK",
+          "KSGGLLLGGSK",
+          "KSSGGGGGSSK",
+          "KRSSGGGSSRK",
+          "KRRSSSSSRRK",
+          "KDRRRRRRRDK",
+          "KKKKKKKKKKK"
+        ] }
+      ]
+    },
+    { "enemy": "gatekeeper", "name": "GreaveL", "mirror": "GreaveR", "replaces": ["GreaveL"],
+      "anchor": { "part": "GreaveL", "min": [0, 0, 0], "size": [11, 10, 11] } },
+    {
+      "enemy": "gatekeeper", "name": "BootR", "replaces": ["BootR"],
+      "anchor": { "part": "BootR", "min": [0, 0, 0], "size": [11, 4, 13] },
+      "parts": [
+        { "depth": 13, "wrap": true, "cavity": { "size": [8, 3, 8], "offset": [1, 1, 3] },
+          "grid": ["KGGGGGGGGGK", "KSSSSSSSSSK", "KDDDDDDDDDK", "KKKKKKKKKKK"] }
+      ]
+    },
+    { "enemy": "gatekeeper", "name": "BootL", "mirror": "BootR", "replaces": ["BootL"],
+      "anchor": { "part": "BootL", "min": [0, 0, 0], "size": [11, 4, 13] } },
+    {
+      "enemy": "gatekeeper", "name": "BoltSword", "kind": "weapon", "replaces": ["BoltHilt", "BoltBlade"],
+      "anchor": { "part": "BoltHilt", "min": [0, 0, 0], "size": [13, 13, 3] },
+      "parts": [
+        { "type": "side", "frame": 3, "boltSword": true, "depths": { "1-9": 2, "10-13": 3, "14-44": 2 } }
+      ]
+    }
+  ]
+}

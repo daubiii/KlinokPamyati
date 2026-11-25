@@ -1,0 +1,298 @@
+{
+ "apprentice_staff": {
+  "tris": 632,
+  "length": 5.9,
+  "tip": 3.65,
+  "bottom": -2.25,
+  "objects": 3,
+  "voxels": 364
+ },
+ "rusted_rod": {
+  "tris": 1014,
+  "length": 5.8,
+  "tip": 3.55,
+  "bottom": -2.25,
+  "objects": 2,
+  "voxels": 436
+ },
+ "ember_staff": {
+  "tris": 1004,
+  "length": 6.1,
+  "tip": 3.85,
+  "bottom": -2.25,
+  "objects": 3,
+  "voxels": 436
+ },
+ "warden_rod": {
+  "tris": 844,
+  "length": 6.1,
+  "tip": 3.85,
+  "bottom": -2.25,
+  "objects": 3,
+  "voxels": 444
+ },
+ "gate_staff": {
+  "tris": 1116,
+  "length": 6.3,
+  "tip": 4.05,
+  "bottom": -2.25,
+  "objects": 3,
+  "voxels": 799
+ },
+ "beacon_staff": {
+  "tris": 1688,
+  "length": 6.4,
+  "tip": 4.15,
+  "bottom": -2.25,
+  "objects": 4,
+  "voxels": 703
+ },
+ "gatekeeper_scepter": {
+  "tris": 1302,
+  "length": 6.3,
+  "tip": 4.05,
+  "bottom": -2.25,
+  "objects": 3,
+  "voxels": 639
+ },
+ "reed_wand": {
+  "tris": 698,
+  "length": 6.1,
+  "tip": 3.85,
+  "bottom": -2.25,
+  "objects": 3,
+  "voxels": 341
+ },
+ "mossy_staff": {
+  "tris": 944,
+  "length": 6.1,
+  "tip": 3.85,
+  "bottom": -2.25,
+  "objects": 3,
+  "voxels": 433
+ },
+ "tide_staff": {
+  "tris": 948,
+  "length": 6.0,
+  "tip": 3.75,
+  "bottom": -2.25,
+  "objects": 3,
+  "voxels": 607
+ },
+ "thorn_rod": {
+  "tris": 1750,
+  "length": 6.2,
+  "tip": 3.95,
+  "bottom": -2.25,
+  "objects": 3,
+  "voxels": 484
+ },
+ "lotus_staff": {
+  "tris": 1390,
+  "length": 5.8,
+  "tip": 3.55,
+  "bottom": -2.25,
+  "objects": 2,
+  "voxels": 585
+ },
+ "spore_staff": {
+  "tris": 1458,
+  "length": 6.4,
+  "tip": 4.15,
+  "bottom": -2.25,
+  "objects": 3,
+  "voxels": 982
+ },
+ "gardener_crook": {
+  "tris": 1376,
+  "length": 5.9,
+  "tip": 3.65,
+  "bottom": -2.25,
+  "objects": 3,
+  "voxels": 484
+ },
+ "bone_wand": {
+  "tris": 616,
+  "length": 5.6,
+  "tip": 3.35,
+  "bottom": -2.25,
+  "objects": 2,
+  "voxels": 305
+ },
+ "antler_staff": {
+  "tris": 868,
+  "length": 6.1,
+  "tip": 3.85,
+  "bottom": -2.25,
+  "objects": 3,
+  "voxels": 425
+ },
+ "howl_staff": {
+  "tris": 1068,
+  "length": 5.7,
+  "tip": 3.45,
+  "bottom": -2.25,
+  "objects": 3,
+  "voxels": 471
+ },
+ "trap_rod": {
+  "tris": 932,
+  "length": 5.7,
+  "tip": 3.45,
+  "bottom": -2.25,
+  "objects": 2,
+  "voxels": 452
+ },
+ "pack_staff": {
+  "tris": 980,
+  "length": 6.5,
+  "tip": 4.25,
+  "bottom": -2.25,
+  "objects": 3,
+  "voxels": 580
+ },
+ "moon_staff": {
+  "tris": 924,
+  "length": 6.3,
+  "tip": 4.05,
+  "bottom": -2.25,
+  "objects": 3,
+  "voxels": 461
+ },
+ "huntmaster_staff": {
+  "tris": 1614,
+  "length": 6.4,
+  "tip": 4.15,
+  "bottom": -2.25,
+  "objects": 3,
+  "voxels": 670
+ },
+ "poker_rod": {
+  "tris": 612,
+  "length": 6.2,
+  "tip": 3.45,
+  "bottom": -2.75,
+  "objects": 4,
+  "voxels": 274
+ },
+ "bellows_staff": {
+  "tris": 1040,
+  "length": 6.3,
+  "tip": 4.05,
+  "bottom": -2.25,
+  "objects": 3,
+  "voxels": 656
+ },
+ "slag_rod": {
+  "tris": 1398,
+  "length": 5.7,
+  "tip": 3.45,
+  "bottom": -2.25,
+  "objects": 2,
+  "voxels": 537
+ },
+ "crucible_staff": {
+  "tris": 1396,
+  "length": 5.9,
+  "tip": 3.65,
+  "bottom": -2.25,
+  "objects": 3,
+  "voxels": 577
+ },
+ "anvil_rod": {
+  "tris": 804,
+  "length": 6.3,
+  "tip": 4.05,
+  "bottom": -2.25,
+  "objects": 3,
+  "voxels": 632
+ },
+ "founder_staff": {
+  "tris": 1816,
+  "length": 6.5,
+  "tip": 4.25,
+  "bottom": -2.25,
+  "objects": 4,
+  "voxels": 797
+ },
+ "molten_scepter": {
+  "tris": 1350,
+  "length": 6.2,
+  "tip": 3.95,
+  "bottom": -2.25,
+  "objects": 3,
+  "voxels": 438
+ },
+ "unfinished_staff": {
+  "tris": 1094,
+  "length": 6.4,
+  "tip": 4.15,
+  "bottom": -2.25,
+  "objects": 5,
+  "voxels": 355
+ },
+ "quill_wand": {
+  "tris": 510,
+  "length": 6.0,
+  "tip": 3.75,
+  "bottom": -2.25,
+  "objects": 3,
+  "voxels": 300
+ },
+ "page_staff": {
+  "tris": 1012,
+  "length": 5.9,
+  "tip": 3.65,
+  "bottom": -2.25,
+  "objects": 3,
+  "voxels": 505
+ },
+ "hourglass_rod": {
+  "tris": 1112,
+  "length": 6.1,
+  "tip": 3.85,
+  "bottom": -2.25,
+  "objects": 3,
+  "voxels": 481
+ },
+ "tome_staff": {
+  "tris": 1220,
+  "length": 5.7,
+  "tip": 3.45,
+  "bottom": -2.25,
+  "objects": 3,
+  "voxels": 504
+ },
+ "clock_staff": {
+  "tris": 1070,
+  "length": 6.2,
+  "tip": 3.95,
+  "bottom": -2.25,
+  "objects": 3,
+  "voxels": 549
+ },
+ "chronicler_staff": {
+  "tris": 1278,
+  "length": 6.5,
+  "tip": 4.25,
+  "bottom": -2.25,
+  "objects": 2,
+  "voxels": 596
+ },
+ "ink_scepter": {
+  "tris": 1096,
+  "length": 6.1,
+  "tip": 3.85,
+  "bottom": -2.25,
+  "objects": 3,
+  "voxels": 437
+ },
+ "memory_staff": {
+  "tris": 1314,
+  "length": 6.4,
+  "tip": 4.15,
+  "bottom": -2.25,
+  "objects": 4,
+  "voxels": 440
+ }
+}

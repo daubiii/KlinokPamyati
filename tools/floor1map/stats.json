@@ -1,0 +1,189 @@
+{
+ "intro": {
+  "parts": 1464,
+  "faces": 7704,
+  "culled": 1210,
+  "objects": 22,
+  "tris": 15286,
+  "colliders": 47,
+  "dynamic": 0,
+  "lights": 6,
+  "obj_mb": 0.64
+ },
+ "yard": {
+  "parts": 4177,
+  "faces": 22854,
+  "culled": 3816,
+  "objects": 27,
+  "tris": 43104,
+  "colliders": 204,
+  "dynamic": 1,
+  "lights": 9,
+  "obj_mb": 1.72
+ },
+ "street": {
+  "parts": 2783,
+  "faces": 15864,
+  "culled": 2330,
+  "objects": 22,
+  "tris": 29048,
+  "colliders": 69,
+  "dynamic": 1,
+  "lights": 23,
+  "obj_mb": 1.21
+ },
+ "warehouse": {
+  "parts": 1573,
+  "faces": 9474,
+  "culled": 1439,
+  "objects": 9,
+  "tris": 16424,
+  "colliders": 68,
+  "dynamic": 0,
+  "lights": 9,
+  "obj_mb": 0.65
+ },
+ "plaza": {
+  "parts": 4404,
+  "faces": 23190,
+  "culled": 3708,
+  "objects": 37,
+  "tris": 45516,
+  "colliders": 166,
+  "dynamic": 2,
+  "lights": 10,
+  "obj_mb": 1.92
+ },
+ "barbican": {
+  "parts": 5182,
+  "faces": 27960,
+  "culled": 2634,
+  "objects": 39,
+  "tris": 56886,
+  "colliders": 233,
+  "dynamic": 2,
+  "lights": 10,
+  "obj_mb": 2.43
+ },
+ "rest1": {
+  "parts": 1755,
+  "faces": 10104,
+  "culled": 1883,
+  "objects": 8,
+  "tris": 17294,
+  "colliders": 83,
+  "dynamic": 0,
+  "lights": 3,
+  "obj_mb": 0.74
+ },
+ "bridge": {
+  "parts": 6359,
+  "faces": 35232,
+  "culled": 9603,
+  "objects": 26,
+  "tris": 53430,
+  "colliders": 111,
+  "dynamic": 60,
+  "lights": 8,
+  "obj_mb": 2.43
+ },
+ "armory": {
+  "parts": 3681,
+  "faces": 20786,
+  "culled": 3095,
+  "objects": 24,
+  "tris": 37414,
+  "colliders": 183,
+  "dynamic": 3,
+  "lights": 6,
+  "obj_mb": 1.58
+ },
+ "forge": {
+  "parts": 1612,
+  "faces": 9132,
+  "culled": 1556,
+  "objects": 8,
+  "tris": 16178,
+  "colliders": 59,
+  "dynamic": 1,
+  "lights": 3,
+  "obj_mb": 0.66
+ },
+ "gallery": {
+  "parts": 1662,
+  "faces": 9840,
+  "culled": 2124,
+  "objects": 18,
+  "tris": 15648,
+  "colliders": 24,
+  "dynamic": 0,
+  "lights": 4,
+  "obj_mb": 0.62
+ },
+ "tower": {
+  "parts": 7292,
+  "faces": 38460,
+  "culled": 1662,
+  "objects": 30,
+  "tris": 80898,
+  "colliders": 507,
+  "dynamic": 8,
+  "lights": 8,
+  "obj_mb": 3.36
+ },
+ "hall": {
+  "parts": 6470,
+  "faces": 37368,
+  "culled": 4844,
+  "objects": 24,
+  "tris": 67616,
+  "colliders": 83,
+  "dynamic": 2,
+  "lights": 6,
+  "obj_mb": 2.87
+ },
+ "chapel": {
+  "parts": 1866,
+  "faces": 10524,
+  "culled": 1692,
+  "objects": 11,
+  "tris": 19008,
+  "colliders": 48,
+  "dynamic": 0,
+  "lights": 4,
+  "obj_mb": 0.77
+ },
+ "lastgates": {
+  "parts": 4472,
+  "faces": 23892,
+  "culled": 3491,
+  "objects": 23,
+  "tris": 46346,
+  "colliders": 181,
+  "dynamic": 2,
+  "lights": 6,
+  "obj_mb": 1.99
+ },
+ "boss": {
+  "parts": 7465,
+  "faces": 40530,
+  "culled": 3630,
+  "objects": 43,
+  "tris": 81858,
+  "colliders": 296,
+  "dynamic": 3,
+  "lights": 11,
+  "obj_mb": 3.51
+ },
+ "env": {
+  "parts": 137,
+  "faces": 414,
+  "culled": 54,
+  "objects": 17,
+  "tris": 1536,
+  "colliders": 29,
+  "dynamic": 0,
+  "lights": 1,
+  "obj_mb": 0.06
+ }
+}

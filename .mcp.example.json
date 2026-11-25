@@ -1,0 +1,27 @@
+{
+  "//": "Шаблон для .mcp.json (в git не попадает — см. .gitignore). Скопируй в .mcp.json и подставь свой токен Notion. Токен держи в переменной окружения NOTION_TOKEN или вводи по запросу (inputs ниже). Токен, попавший в git 10.11.2026, отозван — см. PLAN_DORABOTKI.md P0-1.",
+  "mcpServers": {
+    "roblox-studio": {
+      "command": "node",
+      "args": ["tools/roblox-mcp.js"]
+    },
+    "notion": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@notionhq/notion-mcp-server"
+      ],
+      "env": {
+        "NOTION_TOKEN": "${input:notion_token}"
+      }
+    }
+  },
+  "inputs": [
+    {
+      "id": "notion_token",
+      "type": "promptString",
+      "description": "Введите ваш Notion Integration Token",
+      "password": true
+    }
+  ]
+}

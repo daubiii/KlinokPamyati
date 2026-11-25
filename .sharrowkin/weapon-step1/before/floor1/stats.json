@@ -1,0 +1,42 @@
+{
+ "rusty_sword": {
+  "tris": 580,
+  "length": 4.87,
+  "objects": 1
+ },
+ "iron_falchion": {
+  "tris": 578,
+  "length": 5.33,
+  "objects": 1
+ },
+ "forge_hammer": {
+  "tris": 846,
+  "length": 5.25,
+  "objects": 1
+ },
+ "guard_blade": {
+  "tris": 1102,
+  "length": 5.33,
+  "objects": 1
+ },
+ "guard_hammer": {
+  "tris": 958,
+  "length": 5.34,
+  "objects": 1
+ },
+ "vortex_blade": {
+  "tris": 2600,
+  "length": 5.29,
+  "objects": 3
+ },
+ "shattered_hammer": {
+  "tris": 2146,
+  "length": 5.42,
+  "objects": 3
+ },
+ "gatekeeper_key": {
+  "tris": 2836,
+  "length": 6.97,
+  "objects": 3
+ }
+}

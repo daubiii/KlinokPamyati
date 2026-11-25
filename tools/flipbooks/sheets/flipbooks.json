@@ -1,0 +1,262 @@
+[
+ {
+  "name": "fb_scythe",
+  "id": "melee/scythe-reap",
+  "grid": 4,
+  "frames": 16,
+  "loop": false,
+  "duration": 1.5,
+  "pivot": [
+   -0.041,
+   0.203
+  ],
+  "what": "серп косы: Жатва, Шлаковый смерч, Гон, Забвение"
+ },
+ {
+  "name": "fb_slash",
+  "id": "melee/sword-slash",
+  "grid": 4,
+  "frames": 16,
+  "loop": false,
+  "duration": 0.42,
+  "pivot": [
+   -0.146,
+   0.342
+  ],
+  "what": "разрез клинка: срезы, рывки"
+ },
+ {
+  "name": "fb_cleave",
+  "id": "melee/heavy-cleave",
+  "grid": 4,
+  "frames": 16,
+  "loop": false,
+  "duration": 1.25,
+  "pivot": [
+   -0.199,
+   0.189
+  ],
+  "what": "раскалённый клинок-призрак Первой отливки"
+ },
+ {
+  "name": "fb_hit",
+  "id": "impacts/hit-spark",
+  "grid": 4,
+  "frames": 16,
+  "loop": false,
+  "duration": 0.32,
+  "pivot": [
+   -0.211,
+   0.2
+  ],
+  "what": "искра попадания"
+ },
+ {
+  "name": "fb_crit",
+  "id": "impacts/crit-hit",
+  "grid": 4,
+  "frames": 16,
+  "loop": false,
+  "duration": 0.6,
+  "pivot": [
+   -0.096,
+   0.198
+  ],
+  "what": "сильное попадание: финалы"
+ },
+ {
+  "name": "fb_slam",
+  "id": "impacts/ground-slam",
+  "grid": 4,
+  "frames": 16,
+  "loop": false,
+  "duration": 2,
+  "pivot": [
+   0.024,
+   0.196
+  ],
+  "what": "удар в землю: тигель, смерч, отливка"
+ },
+ {
+  "name": "fb_wave",
+  "id": "water/wave-crash",
+  "grid": 4,
+  "frames": 16,
+  "loop": false,
+  "duration": 2.4,
+  "pivot": [
+   0.007,
+   0.111
+  ],
+  "what": "гребень волны Прилива"
+ },
+ {
+  "name": "fb_splash",
+  "id": "water/splash",
+  "grid": 4,
+  "frames": 16,
+  "loop": false,
+  "duration": 1.5,
+  "pivot": [
+   0.031,
+   0.14
+  ],
+  "what": "всплеск и лужа"
+ },
+ {
+  "name": "fb_pillar",
+  "id": "fire/flame-pillar",
+  "grid": 8,
+  "frames": 64,
+  "loop": false,
+  "duration": 4.4,
+  "pivot": [
+   0.002,
+   0.407
+  ],
+  "what": "огненный столб Горнила"
+ },
+ {
+  "name": "fb_feathers",
+  "id": "holy/feather-burst",
+  "grid": 4,
+  "frames": 16,
+  "loop": false,
+  "duration": 2.4,
+  "pivot": [
+   0.053,
+   -0.098
+  ],
+  "what": "взрыв перьев сокола"
+ },
+ {
+  "name": "fb_bird",
+  "id": "critters/bird",
+  "grid": 4,
+  "frames": 16,
+  "loop": true,
+  "duration": 2.4,
+  "pivot": [
+   0.191,
+   -0.021
+  ],
+  "what": "сокол в полёте (петля)"
+ },
+ {
+  "name": "fb_thorns",
+  "id": "nature/thorns",
+  "grid": 4,
+  "frames": 16,
+  "loop": false,
+  "duration": 2.2,
+  "pivot": [
+   -0.338,
+   0.106
+  ],
+  "what": "лозы Секатора"
+ },
+ {
+  "name": "fb_roots",
+  "id": "nature/root-snare",
+  "grid": 4,
+  "frames": 16,
+  "loop": false,
+  "duration": 2.2,
+  "pivot": [
+   -0.037,
+   0.117
+  ],
+  "what": "корни держат врага"
+ },
+ {
+  "name": "fb_tendrils",
+  "id": "shadow/shadow-tendrils",
+  "grid": 4,
+  "frames": 16,
+  "loop": false,
+  "duration": 2.6,
+  "pivot": [
+   -0.026,
+   0.158
+  ],
+  "what": "чернильные жгуты"
+ },
+ {
+  "name": "fb_inkburst",
+  "id": "shadow/dark-explosion",
+  "grid": 4,
+  "frames": 16,
+  "loop": false,
+  "duration": 2.6,
+  "pivot": [
+   0.002,
+   0.287
+  ],
+  "what": "клякса-взрыв"
+ },
+ {
+  "name": "fb_runes",
+  "id": "arcane/rune-circle",
+  "grid": 4,
+  "frames": 16,
+  "loop": true,
+  "duration": 4,
+  "pivot": [
+   0.004,
+   0.184
+  ],
+  "what": "буквы Строки, печать"
+ },
+ {
+  "name": "fb_erase",
+  "id": "spawn/disintegrate",
+  "grid": 4,
+  "frames": 16,
+  "loop": false,
+  "duration": 2.6,
+  "pivot": [
+   -0.163,
+   0.24
+  ],
+  "what": "враг стирается обрывками"
+ },
+ {
+  "name": "fb_memory",
+  "id": "arcane/blink-in",
+  "grid": 4,
+  "frames": 16,
+  "loop": false,
+  "duration": 1.2,
+  "pivot": [
+   -0.016,
+   0.321
+  ],
+  "what": "двойник Клинка Памяти появляется"
+ },
+ {
+  "name": "fb_bite",
+  "id": "melee/claw-swipe",
+  "grid": 4,
+  "frames": 16,
+  "loop": false,
+  "duration": 0.5,
+  "pivot": [
+   -0.461,
+   0.313
+  ],
+  "what": "укус гончей"
+ },
+ {
+  "name": "fb_jaws",
+  "id": "impacts/blunt-hit",
+  "grid": 4,
+  "frames": 16,
+  "loop": false,
+  "duration": 0.6,
+  "pivot": [
+   -0.064,
+   0.267
+  ],
+  "what": "захлоп капкана"
+ }
+]

@@ -1,0 +1,9 @@
+[2026-11-23T11:37:37.323Z] bridge starting; spawning StudioMCP.exe
+[2026-11-23T11:37:39.875Z] mcp-stderr 2026-11-23T11:37:39.875600Z  WARN studio_mcp_proxy::ws_server::server: No proxy found waiting for response init-tools-0e0059b7-2444-4105-a2ef-f92a9f807fe7-be0fcf5f-1bcd-449a-93b8-2bda54bcfbe2
+[2026-11-23T11:37:39.930Z] bridge HTTP listening on http://127.0.0.1:8799
+[2026-11-23T11:37:39.936Z] initialized {"name":"RobloxStudio","version":"1.0.0"}
+[2026-11-23T11:37:40.126Z] studio attached: [{"file":"KlinokPamyati123.rbxl","id":"0e0059b7-2444-4105-a2ef-f92a9f807fe7","mode":"Edit","name":null,"persistedToCloud":false,"state":"- Current Studio Mode: Edit\n- Available DataModels: Edit\n- Focused DataModel in the viewport: Edit"}]
+[2026-11-23T12:19:19.740Z] image saved C:\Users\artem\KlinokPamyati\tools\shots\shot-1795436359733-1.jpg 59365 bytes
+[2026-11-23T12:21:18.158Z] image saved C:\Users\artem\KlinokPamyati\tools\shots\shot-1795436478158-2.jpg 182553 bytes
+[2026-11-23T12:22:12.290Z] image saved C:\Users\artem\KlinokPamyati\tools\shots\shot-1795436532290-3.jpg 238343 bytes
+[2026-11-23T13:00:32.844Z] mcp-stderr 2026-11-23T13:00:32.845090Z  WARN studio_mcp_proxy::ws_server::server: No proxy found waiting for response init-tools-42424623-5cf2-444e-a6fc-a7d21fb7bd4e-a64dee32-40dc-4c07-be78-aa095d135ab6

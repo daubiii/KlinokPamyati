@@ -1,0 +1,34 @@
+# Roblox Studio
+*.rbxl.lock
+*.rbxlx.lock
+
+# Служебное
+docs/*.txt
+node_modules/
+
+tools/*.log
+tools/mcp.log
+tools/bridge.log
+.vscode/*.log__pycache__/
+
+sourcemap.json
+tools/rojo/
+tools/rojo/*.zip
+# хранилище Obsidian вынесено в C:\Users\artem\SecondBrain
+KlinokPamyati/
+.obsidian/
+.claudian/
+
+# Секреты: .mcp.json содержит токены, в git не попадает (шаблон — .mcp.example.json)
+.mcp.json
+
+# Дампы и превью в git не держим — см. PLAN_DORABOTKI.md P0-1/P3-8
+project_dump.txt
+floor_builders_1_2_dump.txt
+tools/shots/
+docs/shots/
+docs/agent-packs/*.txt
+*.mp4
+
+# Сырые кадры референс-режима (отобранные — в docs/reference-mode/)
+reference_mode/
